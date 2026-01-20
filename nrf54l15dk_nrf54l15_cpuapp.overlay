@@ -1,0 +1,76 @@
+/*
+ * Copyright (c) 2024 Nordic Semiconductor ASA
+ *
+ * SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
+ */
+
+/* Original I2C configuration */
+&i2c21_default {
+    group1 {
+        bias-pull-up;
+    };
+};
+
+&i2c21 {
+    status = "okay";
+};
+
+/* PMIC interrupt configuration */
+&npm1300_ek_pmic {
+    host-int-gpios = <&gpio1 10 0>;
+    pmic-int-pin = <3>;
+    
+    /* Add GPIO controller node */
+    npm1300_ek_gpio: gpio-controller {
+        compatible = "nordic,npm1300-gpio";
+        gpio-controller;
+        #gpio-cells = <2>;
+        ngpios = <5>;
+        status = "okay";
+    };
+};
+
+/* Load Switch 1 (LS1) - for PVDD1 test */
+&npm1300_ek_ldo1 {
+    regulator-initial-mode = <NPM1300_LDSW_MODE_LDSW>;
+    status = "okay";
+};
+
+/* Load Switch 2 (LS2) - for PVDD2 test */
+&npm1300_ek_ldo2 {
+    regulator-initial-mode = <NPM1300_LDSW_MODE_LDSW>;
+    status = "okay";
+};
+
+/* Buck 1 (VOUT1) - for 3V test at C15 */
+&npm1300_ek_buck1 {
+    regulator-initial-mode = <NPM1300_BUCK_MODE_PWM>;
+    regulator-min-microvolt = <1800000>;
+    regulator-max-microvolt = <3300000>;
+    status = "okay";
+};
+
+/* Buck 2 - existing configuration kept */
+&npm1300_ek_buck2 {
+    /* Set to your required rail; example: 1.8 V */
+    regulator-min-microvolt = <3300000>;
+    regulator-max-microvolt = <3300000>;
+    /* Make sure it's on at boot (and kept on) */
+    regulator-boot-on;
+    regulator-always-on;
+    status = "okay";
+};
+
+/* LED configuration - for RGB test */
+&npm1300_ek_leds {
+    compatible = "nordic,npm1300-led";
+    nordic,led0-mode = "host";  /* Red LED - controlled by host */
+    nordic,led1-mode = "host";  /* Green LED - controlled by host */
+    nordic,led2-mode = "host";  /* Blue LED - controlled by host */
+    status = "okay";
+};
+
+/* Charger configuration - for fuel gauge */
+&npm1300_ek_charger {
+    status = "okay";
+};

@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build/_sysbuild/sysbuild/images/CMakeFiles/npm1300_fuel_gauge-Copy"
+		},
+		{
+			"file" : "C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build/_sysbuild/sysbuild/images/CMakeFiles/npm1300_fuel_gauge-Copy.rule"
+		},
+		{
+			"file" : "C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build/_sysbuild/sysbuild/images/CMakeFiles/npm1300_fuel_gauge-Copy-complete.rule"
+		},
+		{
+			"file" : "C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build/_sysbuild/sysbuild/images/npm1300_fuel_gauge-Copy-prefix/src/npm1300_fuel_gauge-Copy-stamp/npm1300_fuel_gauge-Copy-build.rule"
+		},
+		{
+			"file" : "C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build/_sysbuild/sysbuild/images/npm1300_fuel_gauge-Copy-prefix/src/npm1300_fuel_gauge-Copy-stamp/npm1300_fuel_gauge-Copy-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build/_sysbuild/sysbuild/images/npm1300_fuel_gauge-Copy-prefix/src/npm1300_fuel_gauge-Copy-stamp/npm1300_fuel_gauge-Copy-download.rule"
+		},
+		{
+			"file" : "C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build/_sysbuild/sysbuild/images/npm1300_fuel_gauge-Copy-prefix/src/npm1300_fuel_gauge-Copy-stamp/npm1300_fuel_gauge-Copy-install.rule"
+		},
+		{
+			"file" : "C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build/_sysbuild/sysbuild/images/npm1300_fuel_gauge-Copy-prefix/src/npm1300_fuel_gauge-Copy-stamp/npm1300_fuel_gauge-Copy-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build/_sysbuild/sysbuild/images/npm1300_fuel_gauge-Copy-prefix/src/npm1300_fuel_gauge-Copy-stamp/npm1300_fuel_gauge-Copy-patch.rule"
+		},
+		{
+			"file" : "C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build/_sysbuild/sysbuild/images/npm1300_fuel_gauge-Copy-prefix/src/npm1300_fuel_gauge-Copy-stamp/npm1300_fuel_gauge-Copy-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"npm1300_fuel_gauge-Copy"
+		],
+		"name" : "npm1300_fuel_gauge-Copy"
+	}
+}

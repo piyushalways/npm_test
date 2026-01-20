@@ -1,0 +1,2 @@
+osource "C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/boards/shields/*/Kconfig.shield"
+osource "C:/ncs/v3.0.1/nrf/boards/shields/*/Kconfig.shield"

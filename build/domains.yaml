@@ -1,0 +1,7 @@
+default: npm1300_fuel_gauge-Copy
+build_dir: C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build
+domains:
+  - name: npm1300_fuel_gauge-Copy
+    build_dir: C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build/npm1300_fuel_gauge-Copy
+flash_order:
+  - npm1300_fuel_gauge-Copy

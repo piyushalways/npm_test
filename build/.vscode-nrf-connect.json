@@ -1,0 +1,17 @@
+{
+  "toolchainPath": "c:\\ncs\\toolchains\\0b393f9e1b",
+  "sdkPath": "c:\\ncs\\v3.0.1",
+  "board": "nrf54l15dk/nrf54l15/cpuapp",
+  "boardDir": "c:\\ncs\\v3.0.1\\zephyr\\boards\\nordic\\nrf54l15dk",
+  "boardDirs": [
+    "c:\\ncs\\v3.0.1\\zephyr\\boards\\nordic\\nrf54l15dk"
+  ],
+  "optimizations": "none",
+  "cmakeArgs": [],
+  "confFiles": [],
+  "buildDirectory": "build",
+  "kconfigFragments": [],
+  "snippets": [],
+  "dtcOverlays": [],
+  "extraDtcOverlays": []
+}
