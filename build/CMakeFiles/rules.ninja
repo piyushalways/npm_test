@@ -23,7 +23,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\ncs\toolchains\0b393f9e1b\opt\bin\cmake.exe --regenerate-during-build -SC:\ncs\v3.0.1\zephyr\share\sysbuild -BC:\Users\Lenovo\INRGZ\npm1300_fuel_gauge-Copy\build
+  command = C:\ncs\toolchains\0b393f9e1b\opt\bin\cmake.exe --regenerate-during-build -SC:\ncs\v3.0.1\zephyr\share\sysbuild -BC:\Users\Lenovo\INRGZ\npm_test_inrgz_pcb\build
   description = Re-running CMake...
   generator = 1
 

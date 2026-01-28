@@ -1,8 +1,8 @@
-C:\Users\Lenovo\INRGZ\npm1300_fuel_gauge-Copy\build\Kconfig\Kconfig.sysbuild.modules
-C:\Users\Lenovo\INRGZ\npm1300_fuel_gauge-Copy\build\Kconfig\boards\Kconfig.nrf54l15dk
-C:\Users\Lenovo\INRGZ\npm1300_fuel_gauge-Copy\build\Kconfig\boards\Kconfig.sysbuild
-C:\Users\Lenovo\INRGZ\npm1300_fuel_gauge-Copy\build\Kconfig\soc\Kconfig.soc
-C:\Users\Lenovo\INRGZ\npm1300_fuel_gauge-Copy\build\Kconfig\soc\Kconfig.sysbuild
+C:\Users\Lenovo\INRGZ\npm_test_inrgz_pcb\build\Kconfig\Kconfig.sysbuild.modules
+C:\Users\Lenovo\INRGZ\npm_test_inrgz_pcb\build\Kconfig\boards\Kconfig.nrf54l15dk
+C:\Users\Lenovo\INRGZ\npm_test_inrgz_pcb\build\Kconfig\boards\Kconfig.sysbuild
+C:\Users\Lenovo\INRGZ\npm_test_inrgz_pcb\build\Kconfig\soc\Kconfig.soc
+C:\Users\Lenovo\INRGZ\npm_test_inrgz_pcb\build\Kconfig\soc\Kconfig.sysbuild
 C:\ncs\v3.0.1\nrf\soc\nordic\Kconfig.soc
 C:\ncs\v3.0.1\nrf\soc\nordic\nrf54l\Kconfig.soc
 C:\ncs\v3.0.1\nrf\soc\nordic\nrf71\Kconfig.soc

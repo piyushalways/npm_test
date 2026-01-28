@@ -8,18 +8,18 @@ cmake:
     qualifiers: nrf54l15/cpuapp
     revision: 
   images:
-   - name: npm1300_fuel_gauge-Copy
-     source-dir: C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy
+   - name: npm_test_inrgz_pcb
+     source-dir: C:/Users/Lenovo/INRGZ/npm_test_inrgz_pcb
      type: MAIN
   kconfig:
     files:
-     - C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build/_sysbuild/empty.conf
-     - C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build/_sysbuild/empty.conf
+     - C:/Users/Lenovo/INRGZ/npm_test_inrgz_pcb/build/_sysbuild/empty.conf
+     - C:/Users/Lenovo/INRGZ/npm_test_inrgz_pcb/build/_sysbuild/empty.conf
     user-files:
-     - C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build/_sysbuild/empty.conf
+     - C:/Users/Lenovo/INRGZ/npm_test_inrgz_pcb/build/_sysbuild/empty.conf
   sysbuild: true
 version: 0.1.0
 west:
-  command: C:\ncs\toolchains\0b393f9e1b\opt\bin\Scripts\west build --build-dir c:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build c:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy --pristine --board nrf54l15dk/nrf54l15/cpuapp --sysbuild -- -DDEBUG_THREAD_INFO=On -DCONFIG_DEBUG_THREAD_INFO=y -Dnpm1300_fuel_gauge-Copy_DEBUG_THREAD_INFO=On
+  command: C:\ncs\toolchains\0b393f9e1b\opt\bin\Scripts\west build --build-dir c:/Users/Lenovo/INRGZ/npm_test_inrgz_pcb/build c:/Users/Lenovo/INRGZ/npm_test_inrgz_pcb --pristine --board nrf54l15dk/nrf54l15/cpuapp -- -DCONFIG_DEBUG_THREAD_INFO=y
   topdir: c:\ncs\v3.0.1
   version: 1.2.0

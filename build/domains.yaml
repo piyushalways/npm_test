@@ -1,7 +1,7 @@
-default: npm1300_fuel_gauge-Copy
-build_dir: C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build
+default: npm_test_inrgz_pcb
+build_dir: C:/Users/Lenovo/INRGZ/npm_test_inrgz_pcb/build
 domains:
-  - name: npm1300_fuel_gauge-Copy
-    build_dir: C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build/npm1300_fuel_gauge-Copy
+  - name: npm_test_inrgz_pcb
+    build_dir: C:/Users/Lenovo/INRGZ/npm_test_inrgz_pcb/build/npm_test_inrgz_pcb
 flash_order:
-  - npm1300_fuel_gauge-Copy
+  - npm_test_inrgz_pcb

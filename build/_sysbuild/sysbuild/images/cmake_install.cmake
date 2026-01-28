@@ -34,26 +34,26 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build/_sysbuild/sysbuild/images/bootloader/cmake_install.cmake")
+  include("C:/Users/Lenovo/INRGZ/npm_test_inrgz_pcb/build/_sysbuild/sysbuild/images/bootloader/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build/modules/nrf/cmake_install.cmake")
+  include("C:/Users/Lenovo/INRGZ/npm_test_inrgz_pcb/build/modules/nrf/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build/modules/mcuboot/cmake_install.cmake")
+  include("C:/Users/Lenovo/INRGZ/npm_test_inrgz_pcb/build/modules/mcuboot/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build/_sysbuild/sysbuild/images/boards/cmake_install.cmake")
+  include("C:/Users/Lenovo/INRGZ/npm_test_inrgz_pcb/build/_sysbuild/sysbuild/images/boards/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Lenovo/INRGZ/npm1300_fuel_gauge-Copy/build/_sysbuild/sysbuild/images/soc/cmake_install.cmake")
+  include("C:/Users/Lenovo/INRGZ/npm_test_inrgz_pcb/build/_sysbuild/sysbuild/images/soc/cmake_install.cmake")
 endif()
 

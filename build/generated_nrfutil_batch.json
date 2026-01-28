@@ -7,7 +7,7 @@
       "operation": {
         "chip_erase_mode": "ERASE_RANGES_TOUCHED_BY_FIRMWARE",
         "firmware": {
-          "file": "C:\\Users\\Lenovo\\INRGZ\\npm1300_fuel_gauge-Copy\\build\\merged.hex"
+          "file": "C:\\Users\\Lenovo\\INRGZ\\npm_test_inrgz_pcb\\build\\merged.hex"
         },
         "type": "program",
         "verify": "VERIFY_READ"
