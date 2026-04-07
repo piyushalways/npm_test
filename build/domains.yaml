@@ -1,7 +1,0 @@
-default: npm_test_inrgz_pcb
-build_dir: C:/Users/Lenovo/INRGZ/npm_test_inrgz_pcb/build
-domains:
-  - name: npm_test_inrgz_pcb
-    build_dir: C:/Users/Lenovo/INRGZ/npm_test_inrgz_pcb/build/npm_test_inrgz_pcb
-flash_order:
-  - npm_test_inrgz_pcb
