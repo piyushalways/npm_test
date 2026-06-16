@@ -74,3 +74,21 @@
 &npm1300_ek_charger {
     status = "okay";
 };
+
+/* ─── EMS stimulation engine ─── */
+
+/* nrfx owns PWM20/21/22 directly (EasyDMA) — disable the Zephyr PWM driver
+ * nodes so they don't claim the peripherals/pins. */
+&pwm20 { status = "disabled"; };
+&pwm21 { status = "disabled"; };
+&pwm22 { status = "disabled"; };
+
+/* EMS inductor-discharge safety GPIO — P0.0 (driven directly via nrf_gpio). */
+/ {
+    test_ems_gpios {
+        compatible = "gpio-leds";
+        test_ems_gpio: test-ems {
+            gpios = <&gpio0 0 GPIO_ACTIVE_HIGH>;
+        };
+    };
+};
