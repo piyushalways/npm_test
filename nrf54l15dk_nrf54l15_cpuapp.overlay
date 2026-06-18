@@ -19,7 +19,7 @@
 &npm1300_ek_pmic {
     host-int-gpios = <&gpio1 10 0>;
     pmic-int-pin = <3>;
-    
+
     /* Add GPIO controller node */
     npm1300_ek_gpio: gpio-controller {
         compatible = "nordic,npm1300-gpio";
@@ -30,35 +30,51 @@
     };
 };
 
-/* Load Switch 1 (LS1) - for PVDD1 test */
-&npm1300_ek_ldo1 {
-    regulator-initial-mode = <NPM1300_LDSW_MODE_LDSW>;
-    status = "okay";
-};
-
-/* Load Switch 2 (LS2) - for PVDD2 test */
-&npm1300_ek_ldo2 {
-    regulator-initial-mode = <NPM1300_LDSW_MODE_LDSW>;
-    status = "okay";
-};
-
-/* Buck 1 (VOUT1) - for 3V test at C15 */
 &npm1300_ek_buck1 {
-    regulator-initial-mode = <NPM1300_BUCK_MODE_PWM>;
-    regulator-min-microvolt = <1800000>;
-    regulator-max-microvolt = <3300000>;
-    status = "okay";
+	/* Set to your required rail; example: 1.8 V */
+	regulator-min-microvolt = <3000000>;
+	regulator-max-microvolt = <3000000>;
+
+	/* Make sure it’s on at boot (and kept on) */
+	regulator-boot-on;
+	regulator-always-on;
+	/* Enable forced PWM mode */
+	regulator-allowed-modes = <NPM1300_BUCK_MODE_PFM>;
+	regulator-initial-mode = <NPM1300_BUCK_MODE_PFM>;
+	status = "okay";
 };
 
-/* Buck 2 - existing configuration kept */
 &npm1300_ek_buck2 {
-    /* Set to your required rail; example: 1.8 V */
-    regulator-min-microvolt = <3300000>;
-    regulator-max-microvolt = <3300000>;
-    /* Make sure it's on at boot (and kept on) */
-    regulator-boot-on;
-    regulator-always-on;
-    status = "okay";
+	/* Set to your required rail; example: 3.3 V */
+	regulator-min-microvolt = <2200000>;
+	regulator-max-microvolt = <2200000>;
+
+	/* Make sure it's on at boot (and kept on) */
+	regulator-boot-on;
+	regulator-always-on;
+	/* Enable forced PWM mode */
+	regulator-allowed-modes = <NPM1300_BUCK_MODE_PFM>;
+	regulator-initial-mode = <NPM1300_BUCK_MODE_PFM>;
+	status = "okay";
+};
+
+/* Configure LDO1 in Load Switch mode */
+&npm1300_ek_ldo1 {
+	regulator-allowed-modes = <NPM1300_LDSW_MODE_LDSW>;
+	regulator-initial-mode = <NPM1300_LDSW_MODE_LDSW>;
+	regulator-boot-on;
+	status = "okay";
+};
+
+/* Configure LDO2 as a regulated 3.3 V rail.
+ * Output = 3.3 V when enabled, 0 V when disabled.
+ * Control at runtime with regulator_enable() / regulator_disable().
+ */
+&npm1300_ek_ldo2 {
+	regulator-allowed-modes = <NPM1300_LDSW_MODE_LDSW>;
+	regulator-initial-mode = <NPM1300_LDSW_MODE_LDSW>;
+	regulator-boot-on;
+	status = "okay";
 };
 
 /* LED configuration - for RGB test */

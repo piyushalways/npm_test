@@ -46,7 +46,7 @@
 #define EMS_STIM_RAIL  ldsw1
 
 /* ─── LED / GPIO heartbeat ─── */
-#define LED_BLINK_PERIOD_MS   500             /* half-period of the RGB + GPIO heartbeat */
+#define LED_BLINK_PERIOD_MS   2000            /* half-period: LEDs/GPIO toggle every 2 s */
 
 /* ─── Thread configuration ─── */
 #define LED_STACK_SIZE   1024
@@ -86,8 +86,10 @@ static struct k_thread stim_tcb;
 /* ═══════════════════════════════════════════════════════════════════
  *  Thread 1 — LED + GPIO heartbeat (I2C only, no rail toggling)
  *
- *  Devices are verified ready and GPIO1/2/3 are configured as outputs in
- *  main() before this thread is created, so the loop only does set/clear.
+ *  Independent of the stim thread: toggles the nPM1300 RGB LEDs + GPIO1/2/3
+ *  every LED_BLINK_PERIOD_MS. Devices are verified ready and GPIO1/2/3 are
+ *  configured as outputs in main() before this thread is created, so the
+ *  loop only does set/clear.
  * ═══════════════════════════════════════════════════════════════════ */
 static void led_gpio_thread(void *a, void *b, void *c)
 {
